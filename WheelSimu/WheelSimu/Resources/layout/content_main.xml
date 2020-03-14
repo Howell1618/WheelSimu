@@ -1,0 +1,321 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="left"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text="textView4"
+                android:id="@+id/textView4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <ScrollView
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/scrollView1">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="textView5"
+                            android:id="@+id/textView5" />
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="textView1"
+                            android:id="@+id/textView1" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:text="SR-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSetSrd" />
+
+            <Button
+                android:text="SR+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSetSru" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:text="DOWN"
+                android:layout_width="200dp"
+                android:layout_height="90dp"
+                android:id="@+id/btnGearDown" />
+
+
+            <SlidingDrawer
+                android:content="@+id/cntBrake"
+                android:handle="@+id/BrakeButton"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="110dp"
+                android:layout_height="140dp"
+                android:id="@+id/sldBrake">
+
+                <Button
+                    android:text="Brake"
+                    android:layout_width="110dp"
+                    android:layout_height="125dp"
+                    android:layout_marginBottom= "10dp"
+                    android:id="@+id/BrakeButton" />
+
+                <LinearLayout
+                    android:id="@+id/cntBrake"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </LinearLayout>
+            </SlidingDrawer>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:text="textView2"
+            android:id="@+id/textView2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ScrollView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Hello World!"
+                    android:id="@+id/textView3"/>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:text="Clear Angle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnClearAngle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center|bottom"
+            android:layout_marginBottom= "20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IP："
+                    android:id="@+id/textViewIP"/>
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/IPText1"
+                    android:inputType="number|none|numberDecimal|text"
+                    android:text="192.168.1.111" />
+            </LinearLayout>
+
+            <Button
+                android:text="连接"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/Connect" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:text="OFF"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_OFF"/>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SteerEnableSwitch" />
+
+            <TextView
+                android:text="ON"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_ON" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:text="SX-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSet" />
+
+            <Button
+                android:text="SX+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnReset" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:text="UP"
+                android:layout_width="200dp"
+                android:layout_height="90dp"
+                android:id="@+id/btnGearUp" />
+
+            <SlidingDrawer
+                android:content="@+id/cntThrottle"
+                android:handle="@+id/ThrottleButton"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="110dp"
+                android:layout_height="140dp"
+                android:id="@+id/sldThrottle">
+
+                <Button
+                    android:text="Throttle"
+                    android:layout_width="110dp"
+                    android:layout_height="125dp"
+                    android:layout_marginBottom= "10dp"
+                    android:id="@+id/ThrottleButton" />
+
+                <LinearLayout
+                    android:id="@+id/cntThrottle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </LinearLayout>
+            </SlidingDrawer>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
